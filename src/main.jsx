@@ -5,8 +5,8 @@ import Home from './pages/Home/home'
 import About from './pages/About/about'
 import NotFound from './pages/NotFound/notFound'
 import Housing from './pages/Housing/housing'
-import Header from './components/Header'
-import Footer from './components/Footer'
+import Header from './components/Header/header'
+import Footer from './components/Footer/footer'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
