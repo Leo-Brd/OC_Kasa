@@ -1,8 +1,24 @@
 
 footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: black;
-}
+    padding: 60px 0 25px 0;
+    gap: 35px;
 
-footer p {
-    color: white;
+    a {
+        img {
+            width: 122px;
+            height: 39.44px;
+        }
+    }
+
+    p {
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 24px;
+    }
 }
