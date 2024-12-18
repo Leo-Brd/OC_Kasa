@@ -2,11 +2,12 @@
 main {
     display: flex;
     flex-direction: column;
+    padding: 0px 100px;
+    gap: 35px;
 
-    .main__title {
+    .home__banner {
         position: relative;
         height: 223px;
-        margin: 0px 100px;
         border: 1px solid black;
         border-radius: 25px;
 
@@ -42,5 +43,9 @@ main {
             font-size: 48px;
             z-index: 2;
         }
+    }
+
+    .main__accomodations {
+        display: flex;
     }
 }
