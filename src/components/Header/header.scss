@@ -33,7 +33,7 @@ header {
                 font-family:'Montserrat';
                 color: black;
 
-                &:hover {
+                &:hover, &.active {
                     text-decoration: underline;
                 }
             }

@@ -1,8 +1,10 @@
 import './header.scss'
 import logo from '../../assets/logoHeader.svg'
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 function Header() {
+    const location = useLocation();
+
     return (
         <header>
             <Link to="/" className='header__logo'>
@@ -12,10 +14,14 @@ function Header() {
             <nav className='header__nav'>
                 <ul>
                     <li>
-                        <Link to="/">Accueil</Link>
+                        <Link to="/" className={location.pathname === '/' ? 'active' : ''}>
+                            Accueil
+                        </Link>
                     </li>
                     <li>
-                        <Link to="/About">A Propos</Link>
+                        <Link to="/About" className={location.pathname === '/About' ? 'active' : ''}>
+                            A Propos
+                        </Link>
                     </li>
                 </ul>
             </nav>
