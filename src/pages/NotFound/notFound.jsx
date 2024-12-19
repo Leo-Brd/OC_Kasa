@@ -6,7 +6,7 @@ function notFound() {
         <main id="notFound">
             <h1>404</h1>
             <p>Oups ! La page que vous demandez n'existe pas.</p>
-            <Link to="/home">Retourner sur la page d'accueil</Link>
+            <Link to="/" className='notFound__link'>Retourner sur la page d'accueil</Link>
         </main>
     );
 }

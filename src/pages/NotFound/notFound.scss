@@ -1,4 +1,28 @@
+$main-color : #FF6060;
 
 #notFound {
-    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 100px;
+    margin-bottom: 150px;
+
+    h1 {
+        font-weight: 700;
+        font-size: 288px;
+        color: $main-color;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 36px;
+        color: $main-color;
+    }
+
+    .notFound__link {
+        font-weight: 500;
+        font-size: 18px;
+        text-decoration: underline;
+        color: black;
+    }
 }
