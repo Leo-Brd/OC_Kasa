@@ -1,12 +1,11 @@
+import './card.scss'
 
 function Card({ id, title }) {
-    // On peut maintenant accéder à id et title via props
 
     return (
-        <div>
-            {console.log(id, title)}
+        <article className="card">
             <h2>{title}</h2>
-        </div>
+        </article>
     );
 }
 

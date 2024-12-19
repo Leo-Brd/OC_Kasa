@@ -1,0 +1,23 @@
+$main-color : #FF6060;
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 340px;
+    border-radius: 10px;
+    background: linear-gradient(
+        to bottom,
+        $main-color 0%,
+        #ce5656 100%
+    );
+
+    h2 {
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+}
