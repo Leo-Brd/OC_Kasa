@@ -14,7 +14,7 @@ function Home() {
     }, []);
 
     return (
-        <main>
+        <main id="home">
             <div className='home__banner'>
                 <img src={background} alt="Paysage brumeux de côtes océaniques rocheuses " />
                 <h1>Chez vous, partout et ailleurs</h1>
