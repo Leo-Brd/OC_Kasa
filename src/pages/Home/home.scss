@@ -3,7 +3,8 @@ main {
     display: flex;
     flex-direction: column;
     padding: 0px 100px;
-    gap: 35px;
+    gap: 40px;
+    margin-bottom: 40px;
 
     .home__banner {
         position: relative;
@@ -38,14 +39,18 @@ main {
             transform: translate(-50%, -50%);
             text-align: center;
             color: white;
-            font-family: 'Montserrat', sans-serif;
             font-weight: 700;
             font-size: 48px;
             z-index: 2;
         }
     }
 
-    .main__accomodations {
+    .home__grid {
         display: flex;
+        flex-wrap: wrap;
+        gap: 60px;
+        background-color: #F6F6F6;
+        border-radius: 25px;
+        padding: 50px;
     }
 }
