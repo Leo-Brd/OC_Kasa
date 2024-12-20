@@ -18,6 +18,7 @@ function Home() {
                         key={accomodation.id} 
                         id={accomodation.id} 
                         title={accomodation.title}
+                        cover={accomodation.cover}
                     />
                 ))}
             </section>
