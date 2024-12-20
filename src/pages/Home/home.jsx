@@ -10,6 +10,7 @@ function Home() {
         <main id="home">
             <Banner 
                 background={background}
+                alt= "Paysage brumeux de côtes océaniques rocheuses"
                 text= "Chez vous, partout et ailleurs"
             />
             

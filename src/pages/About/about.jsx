@@ -5,6 +5,7 @@ function About() {
     return (
         <Banner
             background={background}
+            alt= "Vallée de montagnes enneigées"
             text = ""
         />
     );

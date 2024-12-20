@@ -1,9 +1,9 @@
 import './Banner.scss'
 
-function Banner( {background, text} ) {
+function Banner( {background, alt, text} ) {
     return(
         <div className='home__banner'>
-            <img src={background} alt="Paysage brumeux de côtes océaniques rocheuses " />
+            <img src={background} alt={alt} />
             <h1>{text}</h1>
         </div>
     )
