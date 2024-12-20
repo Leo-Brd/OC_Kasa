@@ -1,16 +1,17 @@
 import './Home.scss'
 import background from '../../assets/images/background.png'
 import Card from '../../components/Card/Card';
+import Banner from '../../components/Banner/Banner'
 import accomodations from '../../assets/accomodations.json';
 
 function Home() {   
 
     return (
         <main id="home">
-            <div className='home__banner'>
-                <img src={background} alt="Paysage brumeux de côtes océaniques rocheuses " />
-                <h1>Chez vous, partout et ailleurs</h1>
-            </div>
+            <Banner 
+                background={background}
+                text= "Chez vous, partout et ailleurs"
+            />
             
             <section className='home__grid'>
                 {accomodations.map((accomodation) => (
