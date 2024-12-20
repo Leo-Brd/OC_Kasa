@@ -10,11 +10,6 @@ import Footer from './components/Footer/footer'
 import accomodations from './assets/accomodations.json';
 
 
-if (!localStorage.getItem('accomodations')) {
-    localStorage.setItem('accomodations', JSON.stringify(accomodations));
-}
-
-
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Router>

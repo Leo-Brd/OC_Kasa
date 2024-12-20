@@ -1,17 +1,9 @@
-import { useState, useEffect } from 'react';
 import './home.scss'
 import background from '../../assets/images/background.png'
 import Card from '../../components/Card/card';
+import accomodations from '../../assets/accomodations.json';
 
 function Home() {   
-    const [accomodations, setAccomodations] = useState([]); 
-
-    useEffect(() => {
-        const storedAccomodations = localStorage.getItem('accomodations');
-        if (storedAccomodations) {
-            setAccomodations(JSON.parse(storedAccomodations));
-        }
-    }, []);
 
     return (
         <main id="home">
