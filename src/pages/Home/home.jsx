@@ -1,6 +1,6 @@
-import './home.scss'
+import './Home.scss'
 import background from '../../assets/images/background.png'
-import Card from '../../components/Card/card';
+import Card from '../../components/Card/Card';
 import accomodations from '../../assets/accomodations.json';
 
 function Home() {   

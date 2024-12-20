@@ -1,12 +1,12 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Home from './pages/Home/home'
-import About from './pages/About/about'
-import NotFound from './pages/NotFound/notFound'
-import Accomodation from './pages/Accomodation/accomodation'
-import Header from './components/Header/header'
-import Footer from './components/Footer/footer'
+import Home from './pages/Home/Home'
+import About from './pages/About/About'
+import NotFound from './pages/NotFound/NotFound'
+import Accomodation from './pages/Accomodation/Accomodation'
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
 import accomodations from './assets/accomodations.json';
 
 

@@ -1,4 +1,4 @@
-import './header.scss'
+import './Header.scss'
 import logo from '../../assets/images/logoHeader.svg'
 import { Link, useLocation } from 'react-router-dom';
 

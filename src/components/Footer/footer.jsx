@@ -1,4 +1,4 @@
-import './footer.scss'
+import './Footer.scss'
 import logo from '../../assets/images/logoFooter.png'
 import { Link } from 'react-router-dom';
 
