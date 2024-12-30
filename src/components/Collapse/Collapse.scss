@@ -34,6 +34,12 @@
         background-color: #F6F6F6;
         border-radius: 5px;
         transition: max-height 0.3s ease, padding 0.3s ease;
+
+        .collapse__text {
+            transform: translateY(-20px);
+            opacity: 0;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
     }
 
     &.open {
@@ -41,6 +47,11 @@
             max-height: 500px;
             padding: 10px;
             width: 100%;
+
+            .collapse__text {
+                transform: translateY(0);
+                opacity: 1;
+            }
         }
 
         .chevron {
