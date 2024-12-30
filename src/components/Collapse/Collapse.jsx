@@ -1,18 +1,27 @@
 import './Collapse.scss';
 import { useState } from 'react';
-import chevron_up from '../../assets/images/chevron_up.svg'
-import chevron_down from '../../assets/images/chevron_down.svg'
+import chevron_down from '../../assets/images/chevron_down.svg';
 
 function Collapse({ title, children }) {
     const [isOpen, setIsOpen] = useState(false);
 
+    const toggleCollapse = () => {
+        setIsOpen((prev) => !prev);
+    };
+
     return (
-        <div className="collapse">
-            <div className="collapse__header" onClick={() => setIsOpen(!isOpen)}>
+        <div className={`collapse ${isOpen ? 'open' : ''}`}>
+            <div className="collapse__header" onClick={toggleCollapse}>
                 <h2>{title}</h2>
-                <img src={isOpen ? chevron_up : chevron_down} alt="Chevron" />
+                <img
+                    src={chevron_down}
+                    alt="Chevron"
+                    className="chevron"
+                />
             </div>
-            {isOpen && <div className="collapse__content">{children}</div>}
+            <div className="collapse__content">
+                {children}
+            </div>
         </div>
     );
 }
