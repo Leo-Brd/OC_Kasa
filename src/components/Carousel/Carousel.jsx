@@ -27,6 +27,7 @@ function Carousel({ pictures }) {
             <button className="right" onClick={handleNext}>
                 <img src={arrowRight} alt="Image suivante" className="arrow"/>
             </button>
+            <p>{currentIndex + 1}/{pictures.length}</p>
         </div>
     )
 }
