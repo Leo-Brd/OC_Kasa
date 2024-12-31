@@ -12,7 +12,7 @@ function About() {
                 text = ""
             />
 
-            <div className='collapses'>
+            <div className='about__collapses'>
                 <Collapse title="Fiabilité">
                     <p className="collapse__text">Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations
                         sont régulièrement vérifiées par nos équipes.</p>
