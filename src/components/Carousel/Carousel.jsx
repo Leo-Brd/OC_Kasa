@@ -17,17 +17,15 @@ function Carousel({ pictures }) {
 
     return (
         <div className="carousel">
-            <div className="carousel__container">
-                <img
-                    src={pictures[currentIndex]}
-                    alt={`Slide ${currentIndex + 1}`}
-                />
-            </div>
-            <button onClick={handlePrev}>
-                <img src={arrowLeft} alt="Image précédente"/>
+            <img
+                src={pictures[currentIndex]}
+                alt={`Slide ${currentIndex + 1}`}
+            />
+            <button className="left" onClick={handlePrev}>
+                <img src={arrowLeft} alt="Image précédente" className="arrow"/>
             </button>
-            <button onClick={handleNext}>
-                <img src={arrowRight} alt="Image suivante"/>
+            <button className="right" onClick={handleNext}>
+                <img src={arrowRight} alt="Image suivante" className="arrow"/>
             </button>
         </div>
     )
