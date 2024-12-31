@@ -1,3 +1,5 @@
+$main-color : #FF6060;
+
 .collapse {
     width: 100%;
     display: flex;
@@ -10,7 +12,7 @@
         width: 100%;
         padding: 10px;
         border-radius: 5px;
-        background-color: #FF6060;
+        background-color: $main-color;
         cursor: pointer;
 
         h2 {
@@ -39,6 +41,10 @@
             transform: translateY(-20px);
             opacity: 0;
             transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        ul li {
+            margin-bottom: 6px;
         }
     }
 

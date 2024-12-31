@@ -21,7 +21,7 @@ function Accomodation() {
 
             <section className="accomodation__infos">
 
-                <div>
+                <div className="accomodation__details">
                     <div className="accomodation__left">
                         <h1>{accomodation.title}</h1>
                         <p>{accomodation.location}</p>
