@@ -1,6 +1,6 @@
 import './Accomodation.scss'
 import accomodations from '../../assets/accomodations.json';
-import Carousel from '../../components/Carousel/Carousel'
+import Slideshow from '../../components/Slideshow/Slideshow'
 import Collapse from '../../components/Collapse/Collapse';
 import activeStar from '../../assets/images/icons/active_star.svg';
 import inactiveStar from '../../assets/images/icons/inactive_star.svg';
@@ -17,7 +17,7 @@ function Accomodation() {
     return (
         
         <main id="accomodation">
-            <Carousel pictures={accomodation.pictures} />
+            <Slideshow pictures={accomodation.pictures} />
 
             <section className="accomodation__infos">
 

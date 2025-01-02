@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import './Carousel.scss';
+import './Slideshow.scss';
 import arrowLeft from '../../assets/images/icons/arrow_left.svg';
 import arrowRight from '../../assets/images/icons/arrow_right.svg';
 
-function Carousel({ pictures }) {
+function Slideshow({ pictures }) {
 
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -32,4 +32,4 @@ function Carousel({ pictures }) {
     )
 }
 
-export default Carousel;
+export default Slideshow;
