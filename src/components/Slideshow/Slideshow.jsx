@@ -21,13 +21,19 @@ function Slideshow({ pictures }) {
                 src={pictures[currentIndex]}
                 alt={`Slide ${currentIndex + 1}`}
             />
-            <button className="left" onClick={handlePrev}>
-                <img src={arrowLeft} alt="Image précédente" className="arrow"/>
-            </button>
-            <button className="right" onClick={handleNext}>
-                <img src={arrowRight} alt="Image suivante" className="arrow"/>
-            </button>
-            <p>{currentIndex + 1}/{pictures.length}</p>
+            {pictures.length > 1 && (
+                <div>
+                    <button className="left" onClick={handlePrev}>
+                        <img src={arrowLeft} alt="Image précédente" className="arrow" />
+                    </button>
+                    <button className="right" onClick={handleNext}>
+                        <img src={arrowRight} alt="Image suivante" className="arrow" />
+                    </button>
+                </div>
+            )}
+            {pictures.length > 1 && (
+                <p>{currentIndex + 1}/{pictures.length}</p>
+            )}
         </div>
     )
 }
