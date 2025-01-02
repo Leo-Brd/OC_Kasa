@@ -39,3 +39,28 @@ header {
     }
     
 }
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 20px;
+
+        .header__logo {
+
+            img {
+                width: 145px;
+                height: 47px;
+            }
+        }
+
+        .header__nav {
+            ul {
+                gap: 40px;
+
+                a {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
