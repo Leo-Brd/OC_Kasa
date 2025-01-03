@@ -2,16 +2,24 @@ import './Accomodation.scss';
 import accomodations from '../../assets/accomodations.json';
 import Slideshow from '../../components/Slideshow/Slideshow';
 import Collapse from '../../components/Collapse/Collapse';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { useEffect } from 'react';
 
 function Accomodation() {
     const { id } = useParams();
+    const navigate = useNavigate();
     const accomodation = accomodations.find((acc) => acc.id === id);
 
+    useEffect(() => {
+        if (!accomodation) {
+            navigate('*', { replace: true }); // Redirect to 404
+        }
+    }, [accomodation, navigate]);
+
     if (!accomodation) {
-        return <div>Accommodation not found</div>;
+        return null;
     }
 
     return (
