@@ -1,5 +1,5 @@
-import './Home.scss'
-import background from '../../assets/images/background.png'
+import './Home.scss';
+import background from '../../assets/images/background.png';
 import Card from '../../components/Card/Card';
 import Banner from '../../components/Banner/Banner'
 import accomodations from '../../assets/accomodations.json';

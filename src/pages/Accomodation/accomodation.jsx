@@ -1,10 +1,10 @@
-import './Accomodation.scss'
+import './Accomodation.scss';
 import accomodations from '../../assets/accomodations.json';
-import Slideshow from '../../components/Slideshow/Slideshow'
+import Slideshow from '../../components/Slideshow/Slideshow';
 import Collapse from '../../components/Collapse/Collapse';
-import activeStar from '../../assets/images/icons/active_star.svg';
-import inactiveStar from '../../assets/images/icons/inactive_star.svg';
 import { useParams } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 function Accomodation() {
     const { id } = useParams();
@@ -15,19 +15,17 @@ function Accomodation() {
     }
 
     return (
-        
         <main id="accomodation">
             <Slideshow pictures={accomodation.pictures} />
 
             <section className="accomodation__infos">
-
                 <div className="accomodation__details">
                     <div className="accomodation__left">
                         <h1>{accomodation.title}</h1>
                         <p>{accomodation.location}</p>
                         <div className="accomodation__tags">
                             {accomodation.tags.map((tag, index) => {
-                                return <span key={index}>{tag}</span>
+                                return <span key={index}>{tag}</span>;
                             })}
                         </div>
                     </div>
@@ -35,20 +33,18 @@ function Accomodation() {
                     <div className="accomodation__right">
                         <div className="accomodation__host">
                             <p>{accomodation.host.name}</p>
-                            <img src={accomodation.host.picture} alt={accomodation.host.name}/>
-                        </div>   
+                            <img src={accomodation.host.picture} alt={accomodation.host.name} />
+                        </div>
                         <div className="accomodation__rating">
                             {[...Array(5)].map((_, index) => (
-                                <img
+                                <FontAwesomeIcon
                                     key={index}
-                                    src={index < accomodation.rating ? activeStar : inactiveStar}
-                                    alt={index < accomodation.rating ? "Étoile active" : "Étoile inactive"}
+                                    icon={faStar}
+                                    className={index < accomodation.rating ? 'active' : 'inactive'}
                                 />
                             ))}
                         </div>
-
                     </div>
-
                 </div>
 
                 <div className="accomodation__collapses">
@@ -59,14 +55,14 @@ function Accomodation() {
                     <Collapse title="Équipements">
                         <ul>
                             {accomodation.equipments.map((equipement, index) => {
-                                return <li key={index}>{equipement}</li>
+                                return <li key={index}>{equipement}</li>;
                             })}
                         </ul>
                     </Collapse>
                 </div>
             </section>
         </main>
-    )          
+    );
 }
 
 export default Accomodation;
