@@ -9,6 +9,8 @@ $main-color : #FF6060;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        box-sizing: border-box;
+        width: 100%;
         padding: 10px;
         border-radius: 5px;
         background-color: $main-color;
@@ -29,6 +31,7 @@ $main-color : #FF6060;
 
     .collapse__content {
         overflow: hidden;
+        box-sizing: border-box;
         width: 100%;
         max-height: 0;
         padding: 0 10px;
