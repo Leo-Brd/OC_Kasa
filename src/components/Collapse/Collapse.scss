@@ -67,3 +67,25 @@ $main-color : #FF6060;
         }
     }
 }
+
+#about {
+    .collapse {
+
+        .collapse__header {
+            h2 {
+                font-size: 13px;
+            }
+
+            .chevron {
+                width: 16px;
+                height: 16px;
+            }
+        }
+
+        .collapse__content {
+            .collapse__text {
+                font-size: 13px;
+            }
+        }
+    }
+}
