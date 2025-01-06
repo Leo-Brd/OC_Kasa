@@ -2,7 +2,7 @@ import './Home.scss';
 import background from '../../assets/images/background.png';
 import Card from '../../components/Card/Card';
 import Banner from '../../components/Banner/Banner'
-import accomodations from '../../assets/accomodations.json';
+import apartments from '../../assets/apartments.json';
 
 function Home() {   
 
@@ -15,12 +15,12 @@ function Home() {
             />
             
             <section className='home__grid'>
-                {accomodations.map((accomodation) => (
+                {apartments.map((apartment) => (
                     <Card 
-                        key={accomodation.id} 
-                        id={accomodation.id} 
-                        title={accomodation.title}
-                        cover={accomodation.cover}
+                        key={apartment.id} 
+                        id={apartment.id} 
+                        title={apartment.title}
+                        cover={apartment.cover}
                     />
                 ))}
             </section>
