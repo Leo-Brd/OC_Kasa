@@ -107,3 +107,10 @@ $main-color : #FF6060;
         }
     }
 }
+
+
+@media (max-width: 768px) {
+    #accomodation {
+        padding: 0px 20px;
+    }
+}
