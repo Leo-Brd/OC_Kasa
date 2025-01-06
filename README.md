@@ -5,6 +5,7 @@ OpenClassrooms Web developer formation : project 5
 - This is a website for Kasa, an apartment rental agency
 - The project has been created with React, a javascript framework
 - There are routes with React Router to browse pages ( including 404 error page )
+- The css has been made with Sass
 - The website has a mobile version
 
 To run the project :
