@@ -57,7 +57,7 @@ function Accomodation() {
 
                 <div className="accomodation__collapses">
                     <Collapse title="Description">
-                        <p>{accomodation.description}</p>
+                        <p className="collapse__text">{accomodation.description}</p>
                     </Collapse>
 
                     <Collapse title="Équipements">

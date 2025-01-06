@@ -60,6 +60,10 @@ $main-color : #FF6060;
                 transform: translateY(0);
                 opacity: 1;
             }
+
+            ul li {
+                margin-bottom: 15px;
+            }
         }
 
         .chevron {
@@ -85,6 +89,11 @@ $main-color : #FF6060;
         .collapse__content {
             .collapse__text {
                 font-size: 13px;
+            }
+
+            ul li {
+                font-size: 13px;
+                margin-bottom: 10px;
             }
         }
     }
