@@ -2,6 +2,7 @@ import './Collapse.scss';
 import { useState } from 'react';
 import chevron_down from '../../assets/images/icons/chevron_down.svg';
 
+// The code for the collapse component
 function Collapse({ title, children }) {
     const [isOpen, setIsOpen] = useState(false);
 

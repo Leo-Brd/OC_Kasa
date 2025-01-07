@@ -1,6 +1,7 @@
 import './Card.scss';
 import { Link } from 'react-router-dom';
 
+// The code for the card component
 function Card({ id, title, cover }) {
     return (
         <Link to={`/accomodation/${id}`} className="card-link">

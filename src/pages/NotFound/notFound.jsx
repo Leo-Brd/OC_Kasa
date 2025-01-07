@@ -1,6 +1,7 @@
 import './NotFound.scss'
 import { Link } from 'react-router-dom';
 
+// The code for the 404 error page component
 function notFound() {
     return (
         <main id="notFound">

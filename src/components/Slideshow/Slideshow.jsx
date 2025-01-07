@@ -3,6 +3,7 @@ import './Slideshow.scss';
 import arrowLeft from '../../assets/images/icons/arrow_left.svg';
 import arrowRight from '../../assets/images/icons/arrow_right.svg';
 
+// The code for the slideshow component ( Carousel )
 function Slideshow({ pictures }) {
 
     const [currentIndex, setCurrentIndex] = useState(0);

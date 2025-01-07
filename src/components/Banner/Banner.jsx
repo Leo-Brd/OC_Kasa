@@ -1,5 +1,6 @@
 import './Banner.scss'
 
+// The code for the banner component
 function Banner( {background, alt, text} ) {
     return(
         <div className='home__banner'>

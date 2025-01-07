@@ -7,11 +7,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { useEffect } from 'react';
 
+// The code for the apartment page component
 function Apartment() {
     const { id } = useParams();
     const navigate = useNavigate();
     const apartment = apartments.find((acc) => acc.id === id);
 
+    // If the apartment does not exist, we redirect to the 404 page
     useEffect(() => {
         if (!apartment) {
             navigate('*', { replace: true });

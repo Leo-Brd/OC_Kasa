@@ -4,6 +4,7 @@ import Card from '../../components/Card/Card';
 import Banner from '../../components/Banner/Banner'
 import apartments from '../../assets/apartments.json';
 
+// The code for the home page component
 function Home() {   
 
     return (

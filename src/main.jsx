@@ -8,7 +8,7 @@ import Apartment from './pages/Apartment/Apartment'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 
-
+// We create all the routes between the Header and Footer components
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Router>

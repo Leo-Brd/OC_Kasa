@@ -2,6 +2,7 @@ import './Footer.scss'
 import logo from '../../assets/images/logoFooter.png'
 import { Link } from 'react-router-dom';
 
+// The code for the footer component
 function Footer() {
     return (
         <footer>

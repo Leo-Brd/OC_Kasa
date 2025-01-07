@@ -3,6 +3,7 @@ import Banner from '../../components/Banner/Banner'
 import Collapse from '../../components/Collapse/Collapse';
 import './About.scss'
 
+// The code for the about page component
 function About() {
     return (
         <main id="about">

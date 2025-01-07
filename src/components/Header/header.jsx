@@ -2,6 +2,7 @@ import './Header.scss'
 import logo from '../../assets/images/logoHeader.svg'
 import { Link, useLocation } from 'react-router-dom';
 
+// The code for the header component
 function Header() {
     const location = useLocation();
 
