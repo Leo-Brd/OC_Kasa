@@ -22,12 +22,16 @@ footer {
     }
 }
 
-@media (max-width: 768px) {
-
+@media (max-width: 1024px) {
     footer {
         padding: 66px 127px;
         gap: 15px;
+    }
+}
 
+@media (max-width: 768px) {
+
+    footer {
         p {
             font-size: 12px;
         }

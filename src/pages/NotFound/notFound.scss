@@ -29,11 +29,15 @@ $main-color : #FF6060;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     #notFound {
         padding: 0px 50px;
         margin: 95px 0px 134px 0px;
+    }
+}
 
+@media (max-width: 768px) {
+    #notFound {
         h1 {
             font-size: 96px;
         }

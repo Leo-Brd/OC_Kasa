@@ -107,11 +107,15 @@ $main-color : #FF6060;
     }
 }
 
+@media (max-width: 1024px) {
+    #apartment {
+        padding: 0px 20px;
+    }
+}
+
 
 @media (max-width: 768px) {
     #apartment {
-        padding: 0px 20px;
-
         .apartment__infos {
             .apartment__details {
                 flex-direction: column;
