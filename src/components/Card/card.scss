@@ -28,11 +28,11 @@ $main-color : #FF6060;
         h2 {
             display: flex;
             align-items: center;
-            height: 20%;
+            min-height: 20%;
             color: white;
             font-weight: 700;
             font-size: 18px;
-            margin-left: 20px;
+            margin: 4px 20px;
         }
     }
 }
